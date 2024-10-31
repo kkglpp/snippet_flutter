@@ -14,6 +14,7 @@ class Home extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Column(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
                   onPressed: () => Navigator.push(
@@ -22,7 +23,7 @@ class Home extends StatelessWidget {
                       builder: (context) => AppLifecycleTest(),
                     ),
                   ),
-                  child: const Text("AppLifeCycle"),
+                  child: const Text("AppLifeCycle TestPage"),
                 ),
               ],
             )
