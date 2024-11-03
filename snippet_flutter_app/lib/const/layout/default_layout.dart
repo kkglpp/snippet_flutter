@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DefaultLayout extends StatelessWidget {
+class DefaultLayout extends StatelessWidget  {
   final String title;
   final Widget body;
   const DefaultLayout({super.key, required this.title, required this.body});
