@@ -1,0 +1,38 @@
+{SOItems : [
+        { 
+      soId: string ,    -- InventTransId in ERP 
+      pickingNum: string,
+      customerId: string, 
+      customerName: string,  -- 추가됨
+      reqEmployeeId: string,
+      reqEmployeeName: string, -- 추가됨
+      itemId: string, 
+      itemCD: string,
+      itemName: string, -- 추가됨
+      externalItemCD?: string,
+      qty: number, 
+      inventTransRefId: string,
+      inventTransId: string,
+      inventSerialId?: string,
+      orderId: string,
+      deliverDate: string, -- ymdString
+      requestDate?: string, -- 수정됨 ymdString
+      deliveryTerm?: string, -- 수정됨
+      deliveryMode: string,  -- 수정됨
+      deliveryCustomerName: string, -- 수정됨
+      deliveryAddress?: string, 
+      payableCD?: string,
+      payableDetail?: string,
+      demandMessage?: string, -- 수정됨
+      forwarderCD?: string,  -- 수정됨
+      forwarderName?: string,
+      whCD: string,             -- inventLocationId: string, --  whCD 로 수정
+      transferReqWhCD: string,  -- inventToLocationId?: string, --  transferReqWhCD 로 수정
+      transferId?: string,
+      inventDimId: string,
+      shippingType: string,
+      status: number,
+      domainId: string,
+        }
+    ]
+}
