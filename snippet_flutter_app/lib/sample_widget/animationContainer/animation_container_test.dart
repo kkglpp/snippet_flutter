@@ -100,7 +100,7 @@ class _AnimationContainerTestState extends ConsumerState<AnimationContainerTest>
                       ),
                       InkWell(
                         onTap: () {
-                          ref.read(animationContainerProvider).extensionThirdWidth(20);
+                          ref.read(animationContainerProvider.notifier).extensionThirdWidthInVm(20);
                         },
                         child: const Text('CLICK'),
                       ),
