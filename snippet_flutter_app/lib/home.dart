@@ -3,8 +3,10 @@ import 'package:snippet_flutter_app/const/custom/custom_elebtn.dart';
 import 'package:snippet_flutter_app/const/custom/custom_text.dart';
 import 'package:snippet_flutter_app/const/layout/default_layout.dart';
 import 'package:snippet_flutter_app/func_test/view/app_lifecycle_test.dart';
+import 'package:snippet_flutter_app/sample_widget/animationContainer/animation_container_test.dart';
 
 class Home extends StatelessWidget {
+  static String routeName = 'routeNameForHome';
   const Home({super.key});
 
   @override
@@ -29,7 +31,7 @@ class Home extends StatelessWidget {
                   CustomElebtn(
                     txt: "AppLifeCycle\nTestPage",
                     width: 120,
-                    height: 30,
+                    height: 40,
                     onPressed: () => Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -50,19 +52,19 @@ class Home extends StatelessWidget {
                     height: 10,
                   ),
                   SizedBox(
-                    height: maxHeight*0.8,
+                    height: maxHeight * 0.8,
                     child: SingleChildScrollView(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           CustomElebtn(
-                            txt: "AppLifeCycle\nTestPage",
+                            txt: "Animation\nContianer",
                             width: 120,
-                            height: 30,
+                            height: 40,
                             onPressed: () => Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const AppLifecycleTest(),
+                                builder: (context) => const AnimationContainerTest(),
                               ),
                             ),
                           ),

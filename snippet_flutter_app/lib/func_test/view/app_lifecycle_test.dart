@@ -6,20 +6,16 @@ import 'package:flutter/material.dart';
 import 'package:snippet_flutter_app/const/layout/default_layout.dart';
 
 class AppLifecycleTest extends StatefulWidget {
-  static String name ="";
-  name = "@2";
+  static String routeName = "routeNameForAppLifeCycleTest";
   const AppLifecycleTest({super.key});
-
 
   @override
   State<AppLifecycleTest> createState() => _AppLifecycleTestState();
 }
 
-class _AppLifecycleTestState extends State<AppLifecycleTest>
-    with WidgetsBindingObserver {
+class _AppLifecycleTestState extends State<AppLifecycleTest> with WidgetsBindingObserver {
   late final Timer _timer;
   late int count;
-  
 
   @override
   void initState() {
@@ -45,15 +41,12 @@ class _AppLifecycleTestState extends State<AppLifecycleTest>
     });
   }
 
-
   void _endTiemr() {
     _timer.cancel();
   }
 
-
   @override
   Widget build(BuildContext context) {
-
     return DefaultLayout(
       title: "App LifeCycle",
       body: Center(
