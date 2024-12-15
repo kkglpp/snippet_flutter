@@ -10,6 +10,9 @@
 .svn/
 migrate_working_dir/
 
+## command
+*.sh
+
 # IntelliJ related
 *.iml
 *.ipr

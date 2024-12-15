@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:snippet_flutter_app/func_test/view/app_lifecycle_test.dart';
+import 'package:snippet_flutter_app/func_test/app_life_cycle/app_lifecycle_test.dart';
 
 // 아래에서 만든 route들에 이동하는 함수들을 넣는 class
 mixin class RouteForFuncTest {
@@ -14,5 +14,6 @@ mixin class RouteForFuncTest {
       name: AppLifecycleTest.routeName,
       builder: (context, state) => const AppLifecycleTest(),
     ),
+
   ];
 }

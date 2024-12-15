@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:snippet_flutter_app/const/custom/custom_elebtn.dart';
 import 'package:snippet_flutter_app/const/custom/custom_text.dart';
 import 'package:snippet_flutter_app/const/layout/default_layout.dart';
-import 'package:snippet_flutter_app/func_test/view/app_lifecycle_test.dart';
+import 'package:snippet_flutter_app/func_test/app_life_cycle/app_lifecycle_test.dart';
 import 'package:snippet_flutter_app/sample_widget/animationContainer/animation_container_test.dart';
 
 class Home extends StatelessWidget {
