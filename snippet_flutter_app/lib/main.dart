@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:snippet_flutter_app/const/page_router/navigator_notifier.dart';
-import 'package:snippet_flutter_app/home.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized(); // Flutter가 위젯을 빌드하기 전에 초기화 작업을 수행하도록 함
