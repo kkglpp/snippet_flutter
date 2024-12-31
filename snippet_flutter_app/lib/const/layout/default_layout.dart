@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class DefaultLayout extends StatelessWidget  {
+class DefaultLayout extends StatelessWidget {
   final String title;
   final Widget body;
   const DefaultLayout({super.key, required this.title, required this.body});
@@ -9,10 +9,14 @@ class DefaultLayout extends StatelessWidget  {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(title),
+        title: Center(
+          child: Text(
+            title,
+            style: TextStyle(fontSize: 20),
+          ),
+        ),
       ),
       body: body,
-      
     );
   }
 }

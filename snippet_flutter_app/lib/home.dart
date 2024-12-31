@@ -7,6 +7,7 @@ import 'package:snippet_flutter_app/func_test/app_life_cycle/app_lifecycle_test.
 import 'package:snippet_flutter_app/func_test/etc/box_text.dart';
 
 import 'package:snippet_flutter_app/sample_widget/animationContainer/animation_container_test.dart';
+import 'package:snippet_flutter_app/sample_widget/stamp_using_globalkey/view/stamp_action.dart';
 
 class Home extends StatelessWidget {
   static String routeName = 'routeNameForHome';
@@ -15,9 +16,6 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
-      double maxWidth = constraints.maxWidth - 40;
-      double maxHeight = constraints.maxWidth - 40;
-
       return DefaultLayout(
         title: "각 파트로 이동",
         body: Center(
@@ -28,17 +26,13 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const CustomText(txt: "기능 테스트"),
-                  const SizedBox(
-                    height: 10,
-                  ),
+                  const SizedBox(height: 10),
                   CustomElebtn(
                     txt: "AppLifeCycle\nTestPage",
                     width: 120,
                     height: 40,
-                    onPressed: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const AppLifecycleTest()),
-                    ),
+                    onPressed: () =>
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const AppLifecycleTest())),
                   ),
                   CustomElebtn(
                     txt: "AppLifeCycle\nTestPage",
@@ -58,28 +52,23 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   const CustomText(txt: "sample Widget"),
-                  const SizedBox(
-                    height: 10,
+                  const SizedBox(height: 10),
+                  CustomElebtn(
+                    txt: "Animation\nContianer",
+                    width: 120,
+                    height: 40,
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const AnimationContainerTest()),
+                    ),
                   ),
-                  SizedBox(
-                    height: maxHeight * 0.8,
-                    child: SingleChildScrollView(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
-                          CustomElebtn(
-                            txt: "Animation\nContianer",
-                            width: 120,
-                            height: 40,
-                            onPressed: () => Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => const AnimationContainerTest(),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
+                  CustomElebtn(
+                    txt: "Stamp\nAction",
+                    width: 120,
+                    height: 40,
+                    onPressed: () => Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const StampAction()),
                     ),
                   ),
                 ],
