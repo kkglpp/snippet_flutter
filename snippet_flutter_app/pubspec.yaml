@@ -41,6 +41,16 @@ dependencies:
   flutter_riverpod: ^2.6.1
   provider: ^6.1.2
 
+  ## Health Kit 
+  # health: ^11.1.1
+  health: ^10.2.0
+  ## 만보기 용
+  pedometer: ^4.0.2
+  ## 백그라운드 실행을도와주는 라이브러리
+  workmanager: ^0.5.2
+  ## 권한 허용을 위한 라이브 러리
+  permission_handler: ^11.3.1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
